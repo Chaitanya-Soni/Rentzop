@@ -19,9 +19,6 @@ function Header()
                         
                         <Collapse isOpen={isNavOpen} navbar>
                         <Nav navbar>
-                            <NavItem>
-                                <NavLink className="nav-link" to="/home">Home</NavLink>
-                            </NavItem>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <NavItem>
                                 <NavLink className="nav-link" to="/residential">Residential</NavLink>
