@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardImgOverlay, Button  } from "reactstrap";
 import { Property } from "../Offered/properties.js";
 
