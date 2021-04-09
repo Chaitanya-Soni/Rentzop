@@ -52,7 +52,7 @@ function Footer (props) {
                     </div>
                 </div>
                 <br/>
-                <div className="row justify-content-center">
+                <div className="row justify-content-center" id="copyright">
                     <div className="col-auto">
                         <p>© Copyright 2021 Rentzop</p>
                     </div>

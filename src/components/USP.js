@@ -1,8 +1,29 @@
 import React from "react";
 import "../App.css";
 import { FaCheckCircle } from "react-icons/fa";
+import {Card, CardImg, CardImgOverlay, Input, Button} from 'reactstrap';
 function uspComp() {
   return (
+    <div>
+      <Card>
+        <CardImg width = "100%" object src="/Search.png" alt="Search buildings" />
+        <CardImgOverlay>
+          <div className="row justify-content-center">
+            <div className = "col-3 col-sm-2">
+              <select id = "type" name = "rent" className = "type" >
+                <option value = "Commercial">COMMERCIAL</option>
+                <option value = "Residential">RESIDENTIAL</option>
+              </select>
+            </div>
+            <div className="col-7 col-sm-5">
+              <Input type="text" name="search" className="search-bar" />
+            </div>
+            <div className="col-2 col-sm-2">
+              <Button type="submit" className="search-btn" onClick = "">Search</Button>
+            </div>
+          </div>
+          </CardImgOverlay>
+      </Card>
     <div className="usp-container">
       <h1 className="usp-title">
         One of India's Best Premium Service for Owners
@@ -28,6 +49,7 @@ function uspComp() {
         </li>
       </ul>
       <button className="explore">Explore</button>
+    </div>
     </div>
   );
 }
