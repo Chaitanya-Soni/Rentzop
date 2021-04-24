@@ -24,7 +24,7 @@ function uspComp() {
           </div>
           </CardImgOverlay>
       </Card>
-    <div className="usp-container">
+    <div className="container-fluid" id="usp-container">
       <h1 className="usp-title">
         One of India's Best Premium Service for Owners
       </h1>
