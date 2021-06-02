@@ -54,27 +54,29 @@ a:hover {
 .search-bar {
   border-color: rgb(114, 107, 107);
 }
-.usp-container {
+
+#usp-container {
   background-color: rgba(255, 222, 243, 255);
   display: block;
   padding-bottom: 5em;
 }
-.usp-title {
-  font-size: 50px;
-}
+
 .usp-images {
   float: left;
-  border-radius: 30%;
+  border-radius: 0%;
 }
+
 .usp-lists {
   list-style: none;
   font-size: 25px;
   display: block;
   text-align: justify;
 }
+
 .check-icons {
   color: green;
 }
+
 .explore {
   background-color: rgba(79, 35, 97, 255);
   color: #fff;

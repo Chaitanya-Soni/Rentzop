@@ -5,6 +5,7 @@ import Footer from "./FooterComponent";
 import USP from "./USP";
 import Offered from "./OffersComponent";
 import Projects from "./LatestPropComponent";
+import Details from "./DetailsComponent";
 import SignIn from "./SignInComponent";
 import { Switch, Route, Redirect } from "react-router-dom";
 import SignUp from "./SignUp";
@@ -26,6 +27,7 @@ function LandingPage() {
         <Route path="/home" component={HomePage} />
         <Route exact path="/signin" component={() => <SignIn />} />
         <Route exact path="/signup" component={() => <SignUp />} />
+        <Route exact path='/details' component={() => <Details />} />
         <Redirect exact from="/" to="home" />
       </Switch>
       <Footer />
