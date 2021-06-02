@@ -7,30 +7,30 @@ import Offered from "./OffersComponent";
 import Projects from "./LatestPropComponent";
 import Details from "./DetailsComponent";
 import SignIn from "./SignInComponent";
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect } from "react-router-dom";
+import SignUp from "./SignUp";
 function LandingPage() {
-
-  const HomePage =() => {
+  const HomePage = () => {
     return (
       <div>
         <USP />
         <Offered />
         <Projects />
-    </div>
+      </div>
     );
-  }
+  };
 
   return (
     <div>
       <Header />
       <Switch>
-        <Route path='/home' component={HomePage} />
-        <Route exact path='/signin' component={() => <SignIn />} />
+        <Route path="/home" component={HomePage} />
+        <Route exact path="/signin" component={() => <SignIn />} />
+        <Route exact path="/signup" component={() => <SignUp />} />
         <Route exact path='/details' component={() => <Details />} />
         <Redirect exact from="/" to="home" />
       </Switch>
       <Footer />
-      
     </div>
   );
 }
