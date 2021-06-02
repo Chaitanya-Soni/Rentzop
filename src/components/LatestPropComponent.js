@@ -1,6 +1,7 @@
 import React from "react";
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardImgOverlay, Button  } from "reactstrap";
+import { Card, CardImg, CardText, CardTitle, CardSubtitle, CardImgOverlay, Button  } from "reactstrap";
 import { Property } from "../Offered/properties.js";
+import { Link } from "react-router-dom";
 
 
 
@@ -19,7 +20,9 @@ function RenderProp({proj}) {
                 </div>
                 <div className="col-5 col-md-5 text-right" id="price">
                     <CardTitle tag="h5">{proj.price}<br /><div className="text-muted" style={{fontSize: "small"}}>onwards</div></CardTitle>
-                    <Button style={{backgroundColor: "lightred"}}>See Details</Button>
+                    <Link to={{pathname: '/details' }} >
+                        <Button>See Details</Button>
+                    </Link>
                 </div>
             </div>
         </Card>
