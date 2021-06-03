@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardImg, CardText, CardTitle, CardSubtitle, CardImgOverlay, Button  } from "reactstrap";
 import { Property } from "../Offered/properties.js";
 import { Link } from "react-router-dom";
-
+import axios from 'axios';
 
 function RenderProp({proj}) {
     return (
@@ -29,14 +29,23 @@ function RenderProp({proj}) {
 }
 
 const Projects = () => {
-
+    
+    
     const latestprop = Property.map((proj) => {
+        const  url = "http://localhost:8000/api/listings";
+        
+        axios.get(url)
+          .then(res => {
+            console.log(res.data);
+        })
+
         return(
             <div className="col-12 col-md-5 m-1" key={proj.id}>
                 <RenderProp proj={proj} />
             </div>
         );
     });
+    
     return (
         <div className="container">
             <b><h2>Latest Projects</h2></b>
