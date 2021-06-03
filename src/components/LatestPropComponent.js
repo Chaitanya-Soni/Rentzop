@@ -4,7 +4,6 @@ import { Property } from "../Offered/properties.js";
 import { Link } from "react-router-dom";
 import axios from 'axios';
 
-
 function RenderProp({proj}) {
     return (
         <Card className="properties">
